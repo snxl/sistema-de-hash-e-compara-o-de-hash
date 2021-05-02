@@ -1,11 +1,11 @@
-# API-REST-MYSQL-PETSHOP
+# MODELO EXEMPLO DE CADASTRO EMAIL/SENHA, FAZENDO UM HASH NA SENHA E BUSCANDO A SENHA DO BANCO PELO EMAIL PARA COMPARAÇÃO
 
 ##para usar a api será necessário seguir os seguintes passos...
 
 ##-ter instalado o mySQL
 
 
-##-configurar seu mySQL na pasta config
+##-configurar seu mySQL na pasta config(ADICIONAR SCHEMA E SENHA)
 
 
 ##-dar um "npm i" dentro da pasta
@@ -13,17 +13,8 @@
 
 ##-logo após "npm start"(se possuir nodemon), caso não possua abra o terminal na pasta bin e escreva "node www"
 
-##-ROTA-"http://localhost:3000/atendimentos"
+##-ROTA-"http://localhost:3000/" - PARA CADASTRO
 
-##-com um insomnia ou postman, envie um json com as seguintes chaves (cliente,pet,servico,status,observacoes,dataAgendamento)
+##-ROTA-"http://localhost:3000/rs?email=SEU EMAIL" - PARA PESQUISA E COMPARAÇÃO
 
-
-##-atente-se com o cliente, pois ele deve ter ao menos 5 caracteres, e com o dataAgendamento que necessita ter uma data no padrão DD/MM/YYYY (caso coloque algo errado em seu post ele apresentará um erro)
-
-##-para fazer o GET de todos os seus cadastros use -"http://localhost:3000/atendimentos"
-
-##-para dar um GET cadastro especifico -"http://localhost:3000/atendimentos/id_example"
-
-##-para dar um PATCH basta reenviar o json com a rota -"http://localhost:3000/atendimentos/id_example"
-
-##-para um DELETE enviar a seguinte rota "http://localhost:3000/atendimentos/id_example"
+##-com um insomnia ou postman, envie um json com as seguintes chaves (email, senha)
